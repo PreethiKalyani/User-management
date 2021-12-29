@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="./pageStyle.css">
+</head>
+<body>
+    <div class="loginPage">
+    <h1 id="ap">Admin Page</h1>
+        <div class="form">
+            <form class="reg-form" onsubmit="validate(event)" >
+                <input type="text" value="" autofocus placeholder="Admin name" id="adminname"/>
+                <input type="password" value="" placeholder="Password" pattern="[A-Za-z\d\.]{8,15}" title="Password must be between 8 and 15 characters in length and contain only letters, numbers and periods(.)" id="adminpass"/>
+                <button type="submit" class="button" id="login">Login</button>
+            </form>
+            <a href="homePage.html">Go to Home Page</a>
+        </div>
+    </div>
+    <!-- <button class="adminBtn" onclick="javascript:history.go(-1)">Go Back</button> -->
+     <script src="allLogin.js"></script> 
+</body>
+</html>

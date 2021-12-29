@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="pageStyle.css">
+</head>
+<body>
+    <div class="loginPage">
+        <div class="form">
+            <form class="reg-form" onsubmit="register(event)">
+                <input id="userName" type="text" value=""  autofocus placeholder="User name" required>
+                <input id="userEmail" type="email" value="" placeholder="user Email" required>
+                <input id="userPass" type="password" value="" pattern="[A-Za-z\d\.]{8,15}" title="Password must be between 8 and 15 characters in length and contain only letters, numbers and periods(.)" placeholder="Password" required>
+                <input type="tel" id="mobile" value="" pattern="[0-9]{10}" title="Mobile number must contain 10 numbers in length" placeholder="Mobile Number" required>
+                <button type="submit" class="button">Create</button>
+                <p class="message">Already registered? <a href="./userLogin.html" id="reg-id">Login</a></p>
+            </form>
+            <a href="homePage.html">Go to Home Page</a>
+        </div>
+    </div>
+    <script src="allLogin.js"></script>
+</body>
+</html>
